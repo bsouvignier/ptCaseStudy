@@ -1,3 +1,7 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
 header {
     background: url(images/sunset.jpg) no-repeat right;
     background-color: #000033;
@@ -20,11 +24,14 @@ body {
     min-width: 960px;
     background-color: white;
     box-shadow: 5px 5px 5px 3px #000033;
+    background-color: #90C7E3;
 }
 
 nav {
+    float: left;
+    width: 160px;
     font-weight: bold;
-    background-color: #90C7E3;
+    
     text-decoration: none;
     padding-bottom: 5px;
     padding-left: 20px;
@@ -33,20 +40,43 @@ nav {
 }
 
 nav a {
+    text-emphasis: bold;
     text-decoration: none;
     padding-right: 5px;
 
 }
-    
+nav a:link {
+    color: #000033;
+}
+nav a:visited {
+    color: #344873;
+}
+nav a:hover {
+    color: #FFFFFF;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
 #content {
+    margin-left: 190px;
     padding-top: 1px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #FFFFFF;
     
 }
     
-
+#content img {
+    float: left;
+    padding-right: 20px;
+}
+#content ul{
+       list-style-image: url(images/marker.gif);
+}
 
 h1 {
     font-family: Georgia,Times,"Times New Roman",serif ;   
@@ -66,14 +96,57 @@ h3 {
 }
 
 ul {
-    list-style-image: url(images/marker.gif);
-    
+    list-style-position: inside;
 }
 
 .resort {
     color: #5C7FA3;
     font-weight: bold;
 }
+
+#placeholder {
+    position: absolute;
+    top: 15px;
+    left: 320px;
+    opacity: .25;
+}
+
+#gallery {
+    position: relative;
+    height: 200px;
+}
+
+#gallery img {
+    float: none;
+    padding: 0px;
+    border-style: none;
+}
+#gallery ul{
+    width: 250px;
+    list-style-type: none;
+}
+#gallery li{
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+#gallery span {
+    display: none;   
+}
+#gallery a {
+    text-decoration: none;
+    color: #666666;
+    font-style: italic;
+}
+#gallery a:hover span{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 320px;
+    text-align: center;
+    
+}
+
 
 #contact {
     font-size: 90%;
@@ -82,9 +155,12 @@ ul {
 }
 
 footer {
+    margin-left: 190px;
     font-family: Georgia,Times,"Times New Roman",serif;
     font-size: 75%;
     font-style: italic;
     padding: 20px;
+    float: none;
+    background-color: #FFFFFF;
     
 }
