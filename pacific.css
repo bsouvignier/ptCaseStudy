@@ -163,6 +163,13 @@ footer {
     background-color: #FFFFFF;
     
 }
+.desktop {
+    display: inline;
+}
+.mobile {
+    display: none;
+}
+
 
 @media only screen and (max-width: 768px) {
     
@@ -199,4 +206,54 @@ nav li {
     box-shadow: none;
 }
     
+}
+@media only screen and (max-width: 550px) {
+#gallery img {
+    display: none;
+    
+}
+}
+@media only screen and (max-width: 480px) {
+#content {
+    padding-top: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.1em;
+    font-size: 90%;
+}
+nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: block;
+    margin: 0px;
+    padding: 0.3em;
+    border-bottom: 2px ridge;
+    border-bottom-color: #330000;
+}
+nav a {
+    display: block;
+}
+#content img {
+    float: none;
+    padding: 0px;
+    margin: 0.1em;
+}
+ul {
+    list-style-position: outside;   
+}
+    
+h1 {
+        padding-left: 0.3em;
+        margin: 0px;
+        font-size: 1.5em;
+    }
+.mobile {
+    display: inline;   
+}
+.desktop {
+    display: none;   
+}
 }
