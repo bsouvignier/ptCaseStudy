@@ -210,7 +210,7 @@ nav li {
     
 }
 @media only screen and (max-width: 550px) {
-#gallery img {
+#gallery {
     display: none;
     
 }
