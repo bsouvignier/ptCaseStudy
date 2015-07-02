@@ -4,6 +4,7 @@
     <title>Pacific Trails Resort</title>
     <link rel="stylesheet" href="pacific.css" />
     <meta charset="utf-8" />
+    <meta name="Reservations" content="Make a Reservation at the Pacific Trails Resort">
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
         <![endif]-->
@@ -31,13 +32,26 @@
     
     <!-- Main content area -->
     <div id="content">
-        <h2>Reservations</h2>
-        <img src="images/sunset.jpg" alt="Beautiful Image of the Pacific Coast">
-    <p>
-    No Reservations available at this time.    
-    </p>
+        <h2>Reservations at Pacific Trails</h2>
+        <h3>Contact Us Today</h3>
         
+        <p>Required fields are marked with an asterisk *</p>        
     
+        <form method="post" action="http://webdevbasics.net/scripts/pacific.php">
+            <label>* First Name:</label><input type="text" name="myFName" id="myFName" required="required" placeholder="your first name">
+            <label>* Last Name:</label><input type="text" name="myLName" id="myLName" required="required" placeholder="your last name">
+            <label>* Email:</label><input type="email" name="myEmail" id="myEmail" required="required" placeholder="you@domain.com">
+            <label>Phone:</label><input type="tel" name="myPhone" id="myPhone" placeholder="555-555-5555">
+            <label>Arrival:</label><input type="date" name="myArrival" id="myArrival">       
+                <label>Nights:</label><input type="number"  name="myNights" id="myNights" min="1">
+            <label>* Comments:</label><textarea name="myComments" id="myComments" placeholder="your comments here" required="required"></textarea>
+            <input type="submit" value="Submit">
+        
+        
+        </form>
+        
+        
+        
     <div id="contact">
         <span class="resort">Pacific Trails Resort</span><br>
         12010 Pacific Trails Road<br>

@@ -52,6 +52,7 @@ nav a:visited {
 }
 nav a:hover {
     color: #FFFFFF;
+    transition: color 3s ease-out;
 }
 nav ul {
     list-style-type: none;
@@ -69,9 +70,13 @@ nav ul {
     
 }
     
-#content img {
+#content img, #content video, #content embed {
     float: left;
     padding-right: 20px;
+}
+video{
+    width: 320px;
+    height: 240px;
 }
 #content ul{
     list-style-image: url(images/marker.gif);
@@ -172,6 +177,40 @@ footer {
     display: none;
 }
 
+table {
+    border: 1px solid #3399CC;
+    width: 80%;
+    border-spacing: 0;   
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #3399CC;
+    text-align: center;
+    }
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+       background-color: #F5FAFC;    
+}
+
+form label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 10px;
+       
+}
+
+form input {
+    display: block;
+    margin-bottom: 20px;
+    
+}
 
 @media only screen and (max-width: 768px) {
     
@@ -209,6 +248,13 @@ nav li {
 }
     
 }
+
+@media only screen and (min-width: 480px) {
+#deskimg {
+    display: none;   
+}
+}
+
 @media only screen and (max-width: 550px) {
 #gallery {
     display: none;
@@ -216,6 +262,10 @@ nav li {
 }
 }
 @media only screen and (max-width: 480px) {
+video {
+ display: none;
+}
+  
 #content {
     padding-top: 0.1em;
     padding-left: 1em;
@@ -257,5 +307,10 @@ h1 {
 }
 .desktop {
     display: none;   
+}
+
+form label {
+    float: none;
+    text-align: left;
 }
 }
